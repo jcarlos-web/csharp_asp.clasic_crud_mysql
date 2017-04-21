@@ -1,0 +1,8 @@
+C:\Users\jCarlos\Documents\Visual Studio 2013\Projects\WebApplicationASPClasic\WebApplicationASPClasic\bin\WebApplicationASPClasic.dll.config
+C:\Users\jCarlos\Documents\Visual Studio 2013\Projects\WebApplicationASPClasic\WebApplicationASPClasic\bin\WebApplicationASPClasic.dll
+C:\Users\jCarlos\Documents\Visual Studio 2013\Projects\WebApplicationASPClasic\WebApplicationASPClasic\bin\WebApplicationASPClasic.pdb
+C:\Users\jCarlos\Documents\Visual Studio 2013\Projects\WebApplicationASPClasic\WebApplicationASPClasic\bin\MySql.Data.dll
+C:\Users\jCarlos\Documents\Visual Studio 2013\Projects\WebApplicationASPClasic\WebApplicationASPClasic\bin\MySql.Web.dll
+C:\Users\jCarlos\Documents\Visual Studio 2013\Projects\WebApplicationASPClasic\WebApplicationASPClasic\obj\Debug\WebApplicationASPClasic.csprojResolveAssemblyReference.cache
+C:\Users\jCarlos\Documents\Visual Studio 2013\Projects\WebApplicationASPClasic\WebApplicationASPClasic\obj\Debug\WebApplicationASPClasic.dll
+C:\Users\jCarlos\Documents\Visual Studio 2013\Projects\WebApplicationASPClasic\WebApplicationASPClasic\obj\Debug\WebApplicationASPClasic.pdb
