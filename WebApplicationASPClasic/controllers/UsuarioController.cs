@@ -49,7 +49,7 @@ namespace WebApplicationASPClasic.controllers
             catch(Exception ex)
             {
                 Response.Write(alert.alertMessage("Read: Ha surgido un error; "+ex.ToString(),"danger"));
-                dataset = null;
+                dataset    = null;
             }
 
             // Eviar enlaces
