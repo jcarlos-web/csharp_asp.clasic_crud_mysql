@@ -44,7 +44,7 @@ namespace WebApplicationASPClasic.models
         }
 
         // Método Alert
-        public string alertMessage(string clase, string mensaje)
+        public string alertMessage(string mensaje, string clase)
         {
             switch(clase)
             {

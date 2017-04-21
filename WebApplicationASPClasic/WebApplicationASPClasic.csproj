@@ -39,6 +39,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="MySql.Data">
+      <HintPath>D:\INGENIERIA SOFTWARE\BASE DE DATOS\Driver de conexion desde .net al servidor Mysql\v4.5\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Web">
+      <HintPath>D:\INGENIERIA SOFTWARE\BASE DE DATOS\Driver de conexion desde .net al servidor Mysql\v4.5\MySql.Web.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -61,6 +67,8 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controllers\UsuarioController.cs" />
+    <Compile Include="models\Alert.cs" />
     <Compile Include="models\Conexion.cs" />
     <Compile Include="models\UsuarioModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -74,7 +82,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="controllers\" />
     <Folder Include="views\" />
   </ItemGroup>
   <PropertyGroup>
