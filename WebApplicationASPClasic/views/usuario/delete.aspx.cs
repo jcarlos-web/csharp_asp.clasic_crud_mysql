@@ -32,12 +32,9 @@ namespace WebApplicationASPClasic.views.usuario
         {
             if (Request.QueryString["query"] != null)
             {
-                if (IsPostBack)
-                {
-                    int id = int.Parse(Request.QueryString["query"]);
+                int id = int.Parse(Request.QueryString["query"]);
                     dataset = controller.getUsuarioById(id);
                     cargarEnlace();
-                }
             }
         }
 

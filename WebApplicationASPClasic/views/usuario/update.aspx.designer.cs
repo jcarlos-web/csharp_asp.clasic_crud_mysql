@@ -10,16 +10,16 @@
 namespace WebApplicationASPClasic.views.usuario {
     
     
-    public partial class update {
+    public partial class editar {
         
         /// <summary>
-        /// Control id_usuario.
+        /// Control id.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HiddenField id_usuario;
+        protected global::System.Web.UI.WebControls.HiddenField id;
         
         /// <summary>
         /// Control Label1.
@@ -31,13 +31,13 @@ namespace WebApplicationASPClasic.views.usuario {
         protected global::System.Web.UI.WebControls.Label Label1;
         
         /// <summary>
-        /// Control nombre.
+        /// Control txtNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox nombre;
+        protected global::System.Web.UI.WebControls.TextBox txtNombre;
         
         /// <summary>
         /// Control Label2.
@@ -49,13 +49,13 @@ namespace WebApplicationASPClasic.views.usuario {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
-        /// Control ap_pat.
+        /// Control txtAp_pat.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ap_pat;
+        protected global::System.Web.UI.WebControls.TextBox txtAp_pat;
         
         /// <summary>
         /// Control Label3.
@@ -67,13 +67,13 @@ namespace WebApplicationASPClasic.views.usuario {
         protected global::System.Web.UI.WebControls.Label Label3;
         
         /// <summary>
-        /// Control ap_mat.
+        /// Control txtAp_mat.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox ap_mat;
+        protected global::System.Web.UI.WebControls.TextBox txtAp_mat;
         
         /// <summary>
         /// Control Label4.
@@ -85,13 +85,13 @@ namespace WebApplicationASPClasic.views.usuario {
         protected global::System.Web.UI.WebControls.Label Label4;
         
         /// <summary>
-        /// Control email.
+        /// Control txtEmail.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox email;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
         /// Control Label5.
@@ -103,13 +103,13 @@ namespace WebApplicationASPClasic.views.usuario {
         protected global::System.Web.UI.WebControls.Label Label5;
         
         /// <summary>
-        /// Control phone.
+        /// Control txtPhone.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox phone;
+        protected global::System.Web.UI.WebControls.TextBox txtPhone;
         
         /// <summary>
         /// Control Label6.
@@ -121,13 +121,13 @@ namespace WebApplicationASPClasic.views.usuario {
         protected global::System.Web.UI.WebControls.Label Label6;
         
         /// <summary>
-        /// Control usu.
+        /// Control txtUsu.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox usu;
+        protected global::System.Web.UI.WebControls.TextBox txtUsu;
         
         /// <summary>
         /// Control Label7.
@@ -139,13 +139,13 @@ namespace WebApplicationASPClasic.views.usuario {
         protected global::System.Web.UI.WebControls.Label Label7;
         
         /// <summary>
-        /// Control pw.
+        /// Control txtPw.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox pw;
+        protected global::System.Web.UI.WebControls.TextBox txtPw;
         
         /// <summary>
         /// Control Label8.
@@ -157,13 +157,13 @@ namespace WebApplicationASPClasic.views.usuario {
         protected global::System.Web.UI.WebControls.Label Label8;
         
         /// <summary>
-        /// Control chk_activo.
+        /// Control chk_estado.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chk_activo;
+        protected global::System.Web.UI.WebControls.CheckBox chk_estado;
         
         /// <summary>
         /// Control btn_update.

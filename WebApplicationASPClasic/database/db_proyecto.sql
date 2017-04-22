@@ -14,6 +14,6 @@ email varchar(45) not null,
 phone varchar(45) not null,
 usu   varchar(45) not null,
 pw    varchar(45) not null,
-activo varchar(45) not null,
+activo int not null,
 primary key(id_usuario)
 );

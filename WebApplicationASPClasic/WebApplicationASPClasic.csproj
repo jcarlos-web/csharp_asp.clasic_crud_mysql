@@ -74,8 +74,8 @@
     <Content Include="views\js\jquery-1.12.2.min.js" />
     <Content Include="views\usuario\crear.aspx" />
     <Content Include="views\usuario\delete.aspx" />
-    <Content Include="views\usuario\index.aspx" />
     <Content Include="views\usuario\update.aspx" />
+    <Content Include="views\usuario\index.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,19 +107,19 @@
     <Compile Include="views\usuario\delete.aspx.designer.cs">
       <DependentUpon>delete.aspx</DependentUpon>
     </Compile>
-    <Compile Include="views\usuario\index.aspx.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="views\usuario\index.aspx.designer.cs">
-      <DependentUpon>index.aspx</DependentUpon>
-    </Compile>
     <Compile Include="views\usuario\update.aspx.cs">
       <DependentUpon>update.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="views\usuario\update.aspx.designer.cs">
       <DependentUpon>update.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="views\usuario\index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="views\usuario\index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -137,9 +137,7 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="NewFolder1\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

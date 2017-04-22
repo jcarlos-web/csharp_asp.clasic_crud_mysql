@@ -24,14 +24,14 @@ namespace WebApplicationASPClasic.models
         private string phone;
         private string usu;
         private string pw;
-        private string activo;
+        private int activo;
 
 
         // Constructor vacio
         public UsuarioModel() { }
 
         // Constructor con parametros
-        public UsuarioModel(int id_usuario, string nombre, string ap_pat, string ap_mat, string email, string phone, string usu, string pw, string activo)
+        public UsuarioModel(int id_usuario, string nombre, string ap_pat, string ap_mat, string email, string phone, string usu, string pw, int activo)
         {
             this.id_usuario = id_usuario;
             this.nombre = nombre;
@@ -90,7 +90,7 @@ namespace WebApplicationASPClasic.models
             set { pw = value; }
         }
 
-        public string Activo
+        public int Activo
         {
             get { return activo; }
             set { activo = value; }

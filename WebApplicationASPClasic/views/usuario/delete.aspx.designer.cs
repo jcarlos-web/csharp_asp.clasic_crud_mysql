@@ -13,6 +13,15 @@ namespace WebApplicationASPClasic.views.usuario {
     public partial class delete {
         
         /// <summary>
+        /// Control PlaceHolderDelete.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderDelete;
+        
+        /// <summary>
         /// Control id_usuario.
         /// </summary>
         /// <remarks>

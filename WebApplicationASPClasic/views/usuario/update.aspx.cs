@@ -5,97 +5,80 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-// Importar
-using WebApplicationASPClasic.controllers;
+//importar
 using WebApplicationASPClasic.models;
+using WebApplicationASPClasic.controllers;
 using System.Data;
-using WebApplicationASPClasic.views.usuario;
-/*
- * @Autor <jCarlos:Mendoza/>
- * 
- * Proyecto: WebApplicactionASPClasic
- * Código:   update.aspx.cs
- * Fecha:    21/04/2017
- */
 
 namespace WebApplicationASPClasic.views.usuario
 {
-    public partial class update : System.Web.UI.Page
+    public partial class editar : System.Web.UI.Page
     {
-        // Propiedades
+        // instancias y propiedades
+        private DataSet dataset;
         private UsuarioModel model = new UsuarioModel();
         private UsuarioController controller = new UsuarioController();
         private Alert alert = new Alert();
-        private DataSet dataset = new DataSet();
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(Request.QueryString["query"] != null)
+
+            if(Request.QueryString["_query"] != null)
             {
-                if(IsPostBack)
+                int id = Convert.ToInt32(Request.QueryString["_query"]);
+
+
+                if (!Page.IsPostBack)
                 {
-                    int id = int.Parse(Request.QueryString["query"]);
                     dataset = controller.getUsuarioById(id);
-                    cargarEnlace();
+                    txtNombre.Text = dataset.Tables[0].Rows[0]["nombre"].ToString();
+                    txtAp_pat.Text = dataset.Tables[0].Rows[0]["ap_pat"].ToString();
+                    txtAp_mat.Text = dataset.Tables[0].Rows[0]["ap_mat"].ToString();
+                    txtEmail.Text = dataset.Tables[0].Rows[0]["email"].ToString();
+                    txtPhone.Text = dataset.Tables[0].Rows[0]["phone"].ToString();
+                    txtUsu.Text = dataset.Tables[0].Rows[0]["usu"].ToString();
+                    txtPw.Text = dataset.Tables[0].Rows[0]["pw"].ToString();
+                    chk_estado.Checked = Convert.ToBoolean(Convert.ToInt32(dataset.Tables[0].Rows[0]["activo"].ToString()));
                 }
+
             }
         }
+        
 
-
-        // procedimiento cargar Enlace
-        public void cargarEnlace()
-        {
-            id_usuario.Value = dataset.Tables[0].Rows[0]["id_usuario"].ToString();
-            nombre.Text = dataset.Tables[0].Rows[0]["nombre"].ToString();
-            ap_pat.Text = dataset.Tables[0].Rows[0]["ap_pat"].ToString();
-            ap_mat.Text = dataset.Tables[0].Rows[0]["ap_mat"].ToString();
-            email.Text = dataset.Tables[0].Rows[0]["email"].ToString();
-            phone.Text = dataset.Tables[0].Rows[0]["phone"].ToString();
-            usu.Text = dataset.Tables[0].Rows[0]["usu"].ToString();
-            pw.Text = dataset.Tables[0].Rows[0]["pw"].ToString();
-            chk_activo.Checked = Convert.ToBoolean(Convert.ToInt32(dataset.Tables[0].Rows[0]["activo"].ToString()));
-
-
-        }
-
-
-
-        // Procedimiento UpdateUsuario
-        public void updateUsuario()
-        {
-            model.Id_usuario = Convert.ToInt32(id_usuario.Value);
-            model.Nombre = nombre.Text;
-            model.Ap_pat = ap_pat.Text;
-            model.Ap_mat = ap_mat.Text;
-            model.Email = email.Text;
-            model.Phone = phone.Text;
-            model.Usu = usu.Text;
-            model.Pw = pw.Text;
-
-            // Pruba de errores
-            try
+            // Procedimiento UpdateUsuario
+            public void updateUsuario()
             {
+                int estado = 0;
+                model.Id_usuario = Convert.ToInt32(Request.QueryString["_query"]);
+                model.Nombre = txtNombre.Text;
+                model.Ap_pat = txtAp_pat.Text;
+                model.Ap_mat = txtAp_mat.Text;
+                model.Email = txtEmail.Text;
+                model.Phone = txtPhone.Text;
+                model.Usu = txtUsu.Text;
+                model.Pw = txtPw.Text;
+                if(chk_estado.Checked)
+                {
+                    estado = 1;
+                }
+                model.Activo = estado;
+
                 if (controller.updateUsuario(model))
-                    Response.Write(alert.alertMessage("Usuario editado correctamente.", "success"));
+                    Response.Write(alert.alertMessage("Usuario editado correctamente.","info"));
                 else
-                    Response.Write(alert.alertMessage("Usuario no fue editado.", "success"));
+                    Response.Write(alert.alertMessage("Usuario no editado.", "info"));
+
             }
-            catch (Exception ex)
+        
+        protected void btn_update_Click(object sender, EventArgs e)
             {
-                Response.Write(alert.alertMessage("Crear: Ha surgido un error; " + ex.ToString(), "danger"));
+                updateUsuario();
+                Response.Redirect("index.aspx");
             }
-        }
 
-        protected void btn_create_Click(object sender, EventArgs e)
-        {
-            // Guardar los cambios
-            updateUsuario();
-            //Redirecionar
-            Response.Write("<script> window.location='index.aspx' </script>");
-        }
 
+        }
 
 
 
     }
-}

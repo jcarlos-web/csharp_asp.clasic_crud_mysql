@@ -40,7 +40,7 @@
                 <ItemTemplate>
                     <tr>
                         <td><%# Eval("id_usuario") %></td>
-                        <td><a href="update.aspx?query=<%# Eval("id_usuario") %>" title="Editar usuario" role="button" class="btn btn-warning btn-sm">Editar</a></td>
+                        <td><a href="update.aspx?_query=<%# Eval("id_usuario") %>" title="Editar usuario" role="button" class="btn btn-warning btn-sm">Editar</a></td>
                         <td><a href="delete.aspx?query=<%# Eval("id_usuario") %>" title="Eliminar usuario" role="button" class="btn btn-danger btn-sm">Eliminar</a></td>
                         <td><%# Eval("nombre") %></td>
                         <td><%# Eval("ap_pat") %></td>

@@ -8,7 +8,7 @@
     <section class="row">
         <div class="col-sm-4">
 
-          
+            <asp:PlaceHolder ID="PlaceHolderDelete" runat="server">
                 <div class="form-horizontal">
                     <div class="form-group">
                         <asp:HiddenField ID="id_usuario" runat="server" />
@@ -25,8 +25,8 @@
 
                     <asp:Button ID="btn_delete" runat="server" Text="Eliminar"  CssClass="btn btn-danger btn-block" OnClick="btn_create_Click"/>
                 </div>
-           
-
+            </asp:PlaceHolder>
+          
         </div>
     </section>
 

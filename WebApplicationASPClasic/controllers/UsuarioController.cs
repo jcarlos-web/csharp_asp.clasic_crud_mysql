@@ -59,7 +59,7 @@ namespace WebApplicationASPClasic.controllers
         // Método getElementById
         public DataSet getUsuarioById(int id)
         {
-            sql = String.Format("SELECT * FROM usuario WHERE id_usuario= '{0}' ", id);
+            sql = String.Format("SELECT * FROM usuario WHERE id_usuario LIKE '%{0}%' ", id);
             dataset = new DataSet("usuario");
 
             try
@@ -115,9 +115,9 @@ namespace WebApplicationASPClasic.controllers
         }
 
         // Método update
-        public bool updateUsuario(UsuarioModel model)
+        public Boolean updateUsuario(UsuarioModel model)
         {
-            sql = String.Format("UPDATE usuario SET nombre='{0}', ap_pat='{1}', ap_mat='{2}', email='{3}', phone='{4}', usu='{5}', pw='{6}', activo='{7}' WHERE id_usuario='{8}')",
+            sql = String.Format("UPDATE usuario SET nombre='{0}', ap_pat='{1}', ap_mat='{2}', email='{3}', phone='{4}', usu='{5}', pw='{6}', activo='{7}' WHERE id_usuario='{8}' ",
                                model.Nombre,
                                model.Ap_pat,
                                model.Ap_mat,
@@ -127,15 +127,14 @@ namespace WebApplicationASPClasic.controllers
                                model.Pw,
                                model.Activo,
                                model.Id_usuario);
-
             try
             {
                 connection = new MySqlConnection(conexion.getConnection());
                 connection.Open();
                 command    = new MySqlCommand(sql, connection);
                 result     = command.ExecuteNonQuery();
-                connection.Close();
-                if (result != 0)
+                //connection.Close();
+                if (result > 0)
                     return true;
                 else
                     return false;
@@ -151,7 +150,7 @@ namespace WebApplicationASPClasic.controllers
         // Método delete
         public bool deleteUsuario(UsuarioModel model)
         {
-            sql = String.Format("DELETE FROM usuario WHERE id_usuario='{0}')",
+            sql = String.Format("DELETE FROM usuario WHERE id_usuario='{0}' ",
                                model.Id_usuario);
 
             try

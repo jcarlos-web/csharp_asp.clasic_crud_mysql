@@ -41,7 +41,6 @@ namespace WebApplicationASPClasic.views.usuario
         // Procedimiento ReadUsuario
         public void readUsuario()
         {
-            
             try
             {
                 this.list_usuario.DataSource = controller.readUsuario("");
