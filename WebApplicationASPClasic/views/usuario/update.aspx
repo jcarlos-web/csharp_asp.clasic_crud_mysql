@@ -1,13 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/views/PageMaster.Master" AutoEventWireup="true" CodeBehind="crear.aspx.cs" Inherits="WebApplicationASPClasic.views.usuario.crear" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/views/PageMaster.Master" AutoEventWireup="true" CodeBehind="update.aspx.cs" Inherits="WebApplicationASPClasic.views.usuario.update" %>
+
 
 <asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-
-    <h1>Nuevo Usuario</h1>
+    <h1>Editar Usuario</h1>
     <section class="row">
         <div class="col-sm-4">
 
-            <asp:PlaceHolder ID="PlaceHolderCreator" runat="server">
+          
                 <div class="form-horizontal">
+                    <div class="form-group">
+                        <asp:HiddenField ID="id_usuario" runat="server" />
+                    </div>
                     <div class="form-group">
                         <asp:Label ID="Label1" runat="server" Text="label">Nombre:</asp:Label>
                         <asp:TextBox ID="nombre" runat="server" CssClass="form-control" ></asp:TextBox>
@@ -40,12 +43,10 @@
                         <asp:Label ID="Label8" runat="server" Text="label">Activo:</asp:Label>
                         <asp:CheckBox ID="chk_activo" runat="server" Checked="true"/>
                     </div>
-                    <asp:Button ID="btn_create" runat="server" Text="Crear"  CssClass="btn btn-success btn-block" OnClick="btn_create_Click"/>
+                    <asp:Button ID="btn_update" runat="server" Text="Editar"  CssClass="btn btn-warning btn-block" OnClick="btn_create_Click"/>
                 </div>
-            </asp:PlaceHolder>
+           
 
-                
         </div>
     </section>
-
 </asp:Content>

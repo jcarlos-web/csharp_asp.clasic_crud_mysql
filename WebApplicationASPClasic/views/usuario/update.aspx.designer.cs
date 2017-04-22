@@ -10,16 +10,16 @@
 namespace WebApplicationASPClasic.views.usuario {
     
     
-    public partial class crear {
+    public partial class update {
         
         /// <summary>
-        /// Control PlaceHolderCreator.
+        /// Control id_usuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.PlaceHolder PlaceHolderCreator;
+        protected global::System.Web.UI.WebControls.HiddenField id_usuario;
         
         /// <summary>
         /// Control Label1.
@@ -166,12 +166,12 @@ namespace WebApplicationASPClasic.views.usuario {
         protected global::System.Web.UI.WebControls.CheckBox chk_activo;
         
         /// <summary>
-        /// Control btn_create.
+        /// Control btn_update.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btn_create;
+        protected global::System.Web.UI.WebControls.Button btn_update;
     }
 }

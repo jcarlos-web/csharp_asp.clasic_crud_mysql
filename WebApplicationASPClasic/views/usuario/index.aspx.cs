@@ -9,7 +9,6 @@ using System.Web.UI.WebControls;
 using WebApplicationASPClasic.controllers;
 using WebApplicationASPClasic.models;
 using System.Data;
-using WebApplicationASPClasic.views.usuario;
 /*
  * @Autor <jCarlos:Mendoza/>
  * 
@@ -54,8 +53,7 @@ namespace WebApplicationASPClasic.views.usuario
             }
         }
 
-        // Procedimiento CreateUsuario
-
+        
 
 
     }
