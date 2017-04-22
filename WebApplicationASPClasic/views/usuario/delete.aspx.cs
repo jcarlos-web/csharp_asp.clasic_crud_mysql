@@ -62,7 +62,7 @@ namespace WebApplicationASPClasic.views.usuario
         {
             // Eliminar usuario
             deleteUsuario();
-            Response.Write("<script> window.location='index.aspx'; </script>");
+            Response.Redirect("index.aspx");
 
         }
 

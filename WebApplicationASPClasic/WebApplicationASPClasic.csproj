@@ -64,13 +64,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="database\db_proyecto.sql" />
-    <Content Include="views\css\bootstrap-grid.css" />
-    <Content Include="views\css\bootstrap-grid.min.css" />
-    <Content Include="views\css\bootstrap-reboot.css" />
-    <Content Include="views\css\bootstrap-reboot.min.css" />
-    <Content Include="views\css\bootstrap.min.css" />
+    <Content Include="default.aspx" />
+    <Content Include="views\css\bootstrap.css" />
     <Content Include="views\js\bootstrap.js" />
-    <Content Include="views\js\bootstrap.min.js" />
     <Content Include="views\js\jquery-1.12.2.min.js" />
     <Content Include="views\usuario\crear.aspx" />
     <Content Include="views\usuario\delete.aspx" />
@@ -81,6 +77,13 @@
   <ItemGroup>
     <Compile Include="controllers\UsuarioController.cs">
       <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
     </Compile>
     <Compile Include="models\Alert.cs" />
     <Compile Include="models\Conexion.cs" />
@@ -123,12 +126,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="views\css\bootstrap-grid.css.map" />
-    <Content Include="views\css\bootstrap-grid.min.css.map" />
-    <Content Include="views\css\bootstrap-reboot.css.map" />
-    <Content Include="views\css\bootstrap-reboot.min.css.map" />
-    <Content Include="views\css\bootstrap.css.map" />
-    <Content Include="views\css\bootstrap.min.css.map" />
     <Content Include="views\PageMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

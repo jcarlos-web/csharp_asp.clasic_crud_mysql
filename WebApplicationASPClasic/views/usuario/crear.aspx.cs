@@ -73,7 +73,7 @@ namespace WebApplicationASPClasic.views.usuario
             // Crear el usuario
             createUsuario();
             // rediccionarar 
-            Response.Write("<script> window.location='index.aspx' </script>");
+            Response.Redirect("index.aspx");
 
         }
 

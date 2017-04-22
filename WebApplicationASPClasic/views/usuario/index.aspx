@@ -14,7 +14,7 @@
         <br />
             <asp:ListView ID="list_usuario" runat="server">
                 <LayoutTemplate>
-                    <div class="table-resposive">
+                    <div class="table-responsive">
                         <table class="table table-bordered table-striped table-hover">
                             <thead>
                                 <tr>
@@ -34,7 +34,7 @@
                                 <asp:PlaceHolder ID="itemPlaceholder" runat="server"></asp:PlaceHolder>
                             </tbody>
                         </table>
-                    </div>
+                     </div>
                 </LayoutTemplate>
 
                 <ItemTemplate>
@@ -54,7 +54,7 @@
                 </ItemTemplate>
 
             </asp:ListView>
-       
+      
     </section>
 
 
